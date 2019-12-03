@@ -10,12 +10,7 @@ class Node:
     postorder(root.left)
     postorder(root.right)
     a.append(root.val)
-    b = a[:5]
-    c = a[5:10]
-    if(n<5)
-      print(b[n])
-    else
-      print(c[n-5])
+
  root = Node(1)
  root.left = Node(2)
  root.right = Node(3)
@@ -30,4 +25,5 @@ class Node:
 
  print('Enter the node to be traversed')
  n = int(input())
+ postorder(root)
  print(a[n])
