@@ -3,6 +3,7 @@ class Node:
     self.left = None
     self.right = None
     self.val = key
+    
  a = list()
  
  def postorder(root):
@@ -10,17 +11,20 @@ class Node:
     postorder(root.left)
     postorder(root.right)
     a.append(root.val)
-    def search(n):
+  return a
+
+    def search(a,n):
       low=0
       high=num
-      while(low>0 and high<num)
-      if(a[num//2]==n):
-        print('found at',num//2)
-      else
-        if(a[num//2]>n):
-          high=num//2
+      while(low>0 and high<num):
+        if(a[num//2]==n):
+          print('found at',num//2)
         else:
-          low=num//2
+          if(a[num//2]>n):
+            high=num//2
+          else:
+            low=num//2
+      return 0;
         
 
  root = Node(1)
@@ -37,6 +41,6 @@ class Node:
   num = 10
  print('Enter the node to be traversed')
  n = int(input())
- postorder(root)
- search(n)
+ a = postorder(root)
+ search(a, n)
  
