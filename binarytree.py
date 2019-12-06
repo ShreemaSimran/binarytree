@@ -23,13 +23,13 @@ class Node:
           for i in range(0,mid-1):
             if i == n:
               count++
-              print('position is',count)
+              print('position is',count+1)
         elif(a[mid]<n):
           count=mid
           for i in range(mid,high):
             if i == n:
               count++
-              print('position is',count)
+              print('position is',count+1)
        return -1
       
 
@@ -54,4 +54,4 @@ class Node:
  a = postorder(root)
  result=search(a, n,0,num-1,num)
  if(result == -1):
-    print('Invalid choice')
+    print('Node is not present in the tree')
