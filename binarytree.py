@@ -14,11 +14,11 @@ class Node:
   return a
 
     def search(a,n,low,high):
-      if(high>=low):
+      while(high>=low):
         mid=low+high/2
         count=0
-        if(a[num]==n):
-          print('Position is',num)
+        if(a[high]==n):
+          print('Position is',num+1)
         elif(a[mid]>n):
           for i in range(0,mid-1):
             if i == n:
@@ -30,7 +30,7 @@ class Node:
             if i == n:
               count++
               print('position is',count)
-        
+       return -1
       
 
  root = Node(20)
@@ -46,11 +46,12 @@ class Node:
  root.left.right.right = Node(19)
  root.right.left.left = Node(21)
  root.right.left.right = Node(23)
- root.right.right.left = Node(21)
- root.right.right.right = Node(23)
+ root.right.right.left = Node(26)
+ root.right.right.right = Node(30)
  num = 15
  print('Enter the node to be traversed')
  n = int(input())
  a = postorder(root)
- search(a, n,0,num-1)
- 
+ result=search(a, n,0,num-1,num)
+ if(result == -1):
+    print('Invalid choice')
