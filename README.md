@@ -15,6 +15,7 @@ Instructions to run the program:
 6. After post order traversal: 5,11,10,16,19,18,15,21,23,22,26,30,28,25,20
 # Test Cases:
 Test Case 1:
+
 Input:
 16
 
@@ -22,6 +23,7 @@ Output:
 position is 4
 
 Test Case 2:
+
 Input:
 22
 
@@ -29,10 +31,11 @@ Output:
 position is 10
 
 Test Case 3:
+
 Input:
-22
+56
 
 Output:
-Invalid choice
+Node is not present in the tree
 
 
